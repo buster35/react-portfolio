@@ -8,19 +8,26 @@ import Navbar from "react-bootstrap/Navbar";
 // TODO: WHEN I click on a navigation title
 // THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 function Navigation(props) {
-  const navTitles = ["About Me", "Portfolio", "Contact", "Resume"];
   const [pageNav, setPageNav] = useState("");
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar
+      variant="dark"
+      expand="lg"
+      fixed="top"
+      style={{
+        backgroundColor: "#0D1B2A",
+        color: "white",
+      }}
+    >
       <Container>
         <h1>Zach Gilbert</h1>
         <Nav>
-          <Nav.Link href="#about-me" onClick={props.handleButtonClick}>
-            About Me
-          </Nav.Link>
           <Nav.Link href="#portfolio" onClick={props.handleButtonClick}>
             Portfolio
+          </Nav.Link>
+          <Nav.Link href="#about-me" onClick={props.handleButtonClick}>
+            About Me
           </Nav.Link>
           <Nav.Link href="#contact" onClick={props.handleButtonClick}>
             Contact

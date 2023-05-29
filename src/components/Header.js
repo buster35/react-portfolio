@@ -3,8 +3,6 @@ import Navigation from "./Navigation";
 
 // The `Header` component is a child of our `App` component and is responsible for rendering the header across different pages//
 function Header(props) {
-  const name = "Zach Gilbert";
-
   function handleButtonClick(e) {
     e.preventDefault();
     window.location.href = e.target.href; //click events reference each page section
