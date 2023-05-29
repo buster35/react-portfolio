@@ -13,14 +13,12 @@ function Header(props) {
   //TODO: click events for each Nav item
   function handleButtonClick(e) {
     e.preventDefault();
-    console.log("it works!");
+    console.log("it works!"); //working
     //use conditional statement to determine which nav title is selected
-    // setPageNav();
   }
   //anything in return statements use JSX syntax extension (allows HTML to be written inside JS)
   return (
-    <div className="container headerContain">
-      <h1>{name}</h1>
+    <div>
       <Navigation handleButtonClick={handleButtonClick} />
     </div>
   );
