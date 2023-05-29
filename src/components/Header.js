@@ -5,11 +5,9 @@ import Navigation from "./Navigation";
 function Header(props) {
   const name = "Zach Gilbert";
 
-  //TODO: click events for each Nav item
   function handleButtonClick(e) {
     e.preventDefault();
-    console.log("it works!"); //working
-    //use conditional statement to determine which nav title is selected
+    window.location.href = e.target.href; //click events reference each page section
   }
   //anything in return statements use JSX syntax extension (allows HTML to be written inside JS)
   return (
