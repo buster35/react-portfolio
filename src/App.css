@@ -1,12 +1,8 @@
-* {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.cardImg {
+  height: 15vw;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #1b263b;
-  justify-content: start;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardRow {
+  padding-bottom: 1%;
 }
