@@ -9,9 +9,9 @@ function Header(props) {
   }
   //anything in return statements use JSX syntax extension (allows HTML to be written inside JS)
   return (
-    <div>
+    <>
       <Navigation handleButtonClick={handleButtonClick} />
-    </div>
+    </>
   );
 }
 
