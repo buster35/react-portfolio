@@ -4,7 +4,19 @@ html,
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
 }
 
+.container {
+  max-width: 100%;
+  display: flex;
+}
+
 .cardImg {
   height: 15vw;
   object-fit: cover;
+}
+
+.myImg {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  padding-top: 10px;
 }

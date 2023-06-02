@@ -1,20 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import profilePic from "../assets/profile-pic.jpg";
+import { Container } from "react-bootstrap";
 
 function AboutMe({ aboutMe, setAboutMe }) {
   return (
-    <div className="pages">
-      <section>
-        <img
-          src={profilePic}
-          alt="My Professional Headshot"
-          width="250"
-          height="auto"
-        />
-        <p>lorem ipsum</p>
-      </section>
-    </div>
+    <Container fluid className="pages">
+      <img src={profilePic} alt="My Professional Headshot" className="myImg" />
+      <p>lorem ipsum</p>
+    </Container>
   );
 }
 
