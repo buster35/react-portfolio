@@ -22,11 +22,8 @@ SO THAT I can assess whether they're a good candidate for an open position
 
 ```md
 GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
 
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
+
 WHEN I am presented with the About Me section
 THEN I see a recent photo or avatar of the developer and a short bio about them
 WHEN I am presented with the Portfolio section

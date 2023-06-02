@@ -1,5 +1,6 @@
 /* https://cssgradient.io/gradient-backgrounds/ */
-html {
+html,
+.pages {
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
 }
 

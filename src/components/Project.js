@@ -3,7 +3,7 @@ import { Button, Card, Col, Row, Container } from "react-bootstrap";
 
 function Project({ projects }) {
   return (
-    <Row className="cardRow g-4 m-2">
+    <Row className="cardRow g-4 m-2 pages">
       <h2 id="portfolio">Portfolio:</h2>
       {projects.map((project) => (
         <Col key={project.id} style={{ padding: "10px", margin: "20px" }}>
