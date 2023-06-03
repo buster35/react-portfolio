@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav, Image } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import gitLogo from "../assets/github-mark-white.png";
 import linkedInLogo from "../assets/LI-In-Bug.png";
 
@@ -27,6 +27,7 @@ function Footer(props) {
               width="50"
               height="auto"
               className="d-inline-block align-center"
+              alt="gitHub logo"
             />
           </Navbar.Brand>
           <Navbar.Brand href="https://www.linkedin.com/in/zach-gilbert-4663549a/">
@@ -35,6 +36,7 @@ function Footer(props) {
               width="50"
               height="auto"
               className="d-inline-block align-center"
+              alt="linkedIn logo"
             />
           </Navbar.Brand>
         </Nav>

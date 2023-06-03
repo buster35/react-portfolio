@@ -23,7 +23,6 @@ SO THAT I can assess whether they're a good candidate for an open position
 ```md
 GIVEN a single-page application portfolio for a web developer
 
-
 WHEN I am presented with the About Me section
 THEN I see a recent photo or avatar of the developer and a short bio about them
 WHEN I am presented with the Portfolio section
@@ -34,8 +33,6 @@ WHEN I move my cursor out of one of the form fields without entering text
 THEN I receive a notification that this field is required
 WHEN I enter text into the email address field
 THEN I receive a notification if I have entered an invalid email address
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 ```
 
 ## Mock-Up
