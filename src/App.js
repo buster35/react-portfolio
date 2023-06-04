@@ -7,8 +7,7 @@ import projects from "./projects";
 import Project from "./components/Project";
 import AboutMe from "./components/AboutMe";
 
-// TODO:WHEN I load the portfolio the first time
-// THEN the About Me title and section are selected by default
+//set state for current "Stack"
 
 // TODO:WHEN I am presented with the Resume section
 // THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
@@ -17,15 +16,19 @@ import AboutMe from "./components/AboutMe";
 //  window.location.href = e.target.href;
 //}
 
+//App is current representation of state//
 function App() {
+  const [showStack, setShowStack] = useState(false);
+  //we have showStack held in state; when click event occurs we expect to update useState to the reciprocal of the false boolean (true)//
+
   return (
     <>
       {/* inside Components i can define props related to state */}
-      <Header />
+      <Header setShowStack={setShowStack} showStack={showStack} />
 
-      {window.location.href.includes("" || "/" || "/#about-me")}
       <AboutMe />
-      <Project projects={projects} />
+      {/* here is where i'll use conditional rendering to determine which react-bootstrap "Stack" component will be displayed based on click event in navbar */}
+      {/* <div showStack={showStack}>{stack}</div> */}
       <Footer />
     </>
   );

@@ -15,8 +15,6 @@ function Project({ projects }) {
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => {
-    // console.log(e.target);
-    // projects.cardBg = getAttribute("src");
     setShowModal(true);
   };
 
@@ -56,7 +54,7 @@ function Project({ projects }) {
               show={showModal}
               onHide={handleClose}
               backdrop="static"
-              keyboard={false}
+              keyboard={true}
               style={{ backgroundColor: "#0D1B2A" }}
             >
               <Modal.Header closeButton>
