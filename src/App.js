@@ -7,7 +7,7 @@ import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
 import projects from "./projects";
 import Contact from "./components/Contact";
-// import Resume from "./components/Resume";
+import Resume from "./components/Resume";
 
 //App is current representation of state//
 function App() {
@@ -21,8 +21,8 @@ function App() {
     stackContent = <Project projects={projects} />;
   } else if (stack.includes("/#contact")) {
     stackContent = <Contact />;
-    // } else if (stack.includes("/#resume")) {
-    //   stackContent = <Resume />;
+  } else if (stack.includes("/#resume")) {
+    stackContent = <Resume />;
   }
 
   return (
