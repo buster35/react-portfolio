@@ -6,8 +6,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
 import projects from "./projects";
-
-//set state for current "Stack"
+import Contact from "./components/Contact";
 
 // TODO:WHEN I am presented with the Resume section
 // THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
@@ -26,6 +25,8 @@ function App() {
 
   if (stack.includes("/#portfolio")) {
     stackContent = <Project projects={projects} />;
+  } else if (stack.includes("/#contact")) {
+    stackContent = <Contact />;
   }
 
   return (

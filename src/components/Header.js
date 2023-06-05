@@ -7,7 +7,6 @@ function Header({ stack, setStack }) {
     e.preventDefault();
     window.location.href = e.target.href; //click events reference respective "stacks"
     setStack(window.location.href);
-    console.log(stack);
   }
 
   //anything in return statements use JSX syntax extension (allows HTML to be written inside JS)

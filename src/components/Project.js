@@ -46,7 +46,7 @@ function Project({ projects }) {
                   GitHub Repo
                 </Button>
                 <Button variant="secondary" href={project.gitHub}>
-                  Demo
+                  Deployed
                 </Button>
               </Card.Body>
             </Card>

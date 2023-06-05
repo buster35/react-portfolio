@@ -6,8 +6,6 @@ import Navbar from "react-bootstrap/Navbar";
 //we don't need to import Header here bc we're importing this page into Header, which is then imported into App.js
 
 function Navigation(props) {
-  //useState here to pass in stack based on what nav link is clicked on??
-
   return (
     <Navbar
       variant="dark"

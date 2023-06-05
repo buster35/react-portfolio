@@ -1,6 +1,7 @@
 import insomnia from "./assets/insomnia-screengrab.png";
 import note from "./assets/Note-persistance.png";
 import sql from "./assets/mysql-table-outputs.png";
+import wx from "./assets/main-page-img.png";
 
 const projects = [
   {
@@ -23,6 +24,14 @@ const projects = [
     projectType: "Terminal Database Viewer Node.js",
     gitHub: "https://github.com/buster35/CLI-database-viewer",
     cardBg: sql,
+  },
+  {
+    id: 3,
+    name: "Weather Dashboard App",
+    projectType: "Web API w/ Bootstrap",
+    gitHub: "https://github.com/buster35/wakasa-sinus",
+    cardBg: wx,
+    demo: "https://buster35.github.io/wakasa-sinus/",
   },
 ];
 

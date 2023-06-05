@@ -13,6 +13,11 @@ html,
   font-size: 1.07vw;
 }
 
+/* keep? */
+h1 {
+  margin-left: 40px;
+}
+
 p {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
@@ -28,4 +33,5 @@ p {
   max-height: 265px;
   border-radius: 20px;
   padding: 15px 15px;
+  margin-left: 40px;
 }
