@@ -7,15 +7,7 @@ import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
 import projects from "./projects";
 import Contact from "./components/Contact";
-import Resume from "./components/Resume";
-
-// TODO:WHEN I am presented with the Resume section
-// THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-
-// function renderResume(e) {
-//  e.preventDefault();
-//  window.location.href = e.target.href;
-//}
+// import Resume from "./components/Resume";
 
 //App is current representation of state//
 function App() {
@@ -29,8 +21,8 @@ function App() {
     stackContent = <Project projects={projects} />;
   } else if (stack.includes("/#contact")) {
     stackContent = <Contact />;
-  } else if (stack.includes("/#resume")) {
-    stackContent = <Resume />;
+    // } else if (stack.includes("/#resume")) {
+    //   stackContent = <Resume />;
   }
 
   return (

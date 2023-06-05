@@ -15,7 +15,12 @@ function Contact() {
   };
 
   return (
-    <Form noValidate validated={validated} onClick={handleValidate}>
+    <Form
+      noValidate
+      validated={validated}
+      onClick={handleValidate}
+      className="contactForm"
+    >
       <Form.Group className="mb-3" controlId="formNameInput">
         <Form.Label>Name</Form.Label>
         <InputGroup hasValidation>
