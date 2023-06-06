@@ -57,4 +57,4 @@ Please direct any further questions to: buster35 or gilb9711@gmail.com.
 
 ## License
 
-The license used for this project is MIT: https://choosealicense.com/licenses/mit/#.
+The license used for this project is MIT: https://choosealicense.com/licenses/mit/.
