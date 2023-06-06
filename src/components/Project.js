@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 
 function Project({ projects }) {
+  //useState for showing "Deployed" button; if both button href equals themselves then set cursor to N/A"
   const [showModal, setShowModal] = useState(false);
 
   const handleClose = () => setShowModal(false);
@@ -19,12 +20,13 @@ function Project({ projects }) {
   };
 
   return (
-    <Container fluid>
+    <Container fluid style={{ marginBottom: "100px" }}>
       <Row className="g-4 mt-0 pages">
         <h2 id="portfolio">Portfolio:</h2>
         {projects.map((project) => (
           <Col key={project.id} style={{ padding: "10px", margin: "20px" }}>
-            <Card style={{ width: "auto" }}>
+            <Card style={{ width: "auto", minWidth: "200px" }}>
+              {/* eslint-disable-next-line */}
               <a onClick={handleShow}>
                 <Card.Img
                   className="cardImg"

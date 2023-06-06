@@ -1,7 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import profilePic from "../assets/profile-pic.jpg";
-import { Container, Stack, Image } from "react-bootstrap";
+import { Stack, Image } from "react-bootstrap";
 
 function AboutMe({ aboutMe, setAboutMe }) {
   return (

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -15,7 +14,15 @@ function Navigation(props) {
       }}
     >
       <Container>
-        <h1>Zach Gilbert</h1>
+        <h1>
+          <a
+            href="#about-me"
+            style={{ outline: "none", textDecoration: "none", color: "white" }}
+            onClick={props.handleButtonClick}
+          >
+            Zach Gilbert
+          </a>
+        </h1>
         <Nav>
           <Nav.Link href="#portfolio" onClick={props.handleButtonClick}>
             Portfolio

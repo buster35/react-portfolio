@@ -21,7 +21,7 @@ function Footer(props) {
         }}
       >
         <Nav>
-          <Navbar.Brand href="https://github.com/buster35">
+          <Navbar.Brand href="https://github.com/buster35" target="_blank">
             <img
               src={gitLogo}
               width="50"
@@ -30,7 +30,10 @@ function Footer(props) {
               alt="gitHub logo"
             />
           </Navbar.Brand>
-          <Navbar.Brand href="https://www.linkedin.com/in/zach-gilbert-4663549a/">
+          <Navbar.Brand
+            href="https://www.linkedin.com/in/zach-gilbert-4663549a/"
+            target="_blank"
+          >
             <img
               src={linkedInLogo}
               width="50"
