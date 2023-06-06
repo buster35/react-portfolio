@@ -31,18 +31,19 @@ const projects = [
     demo: "https://buster35.github.io/mohini-fluctus/",
   },
   {
-    id: 0,
-    name: "Ecommerce Backend",
-    projectType: "MySQL Restful Demo App",
-    gitHub: "https://github.com/buster35/ecommerce-backend",
-    cardBg: insomnia,
-  },
-  {
     id: 1,
     name: "Note-Taker App",
     projectType: "JavaScript Local Storage Demo",
     gitHub: "https://github.com/buster35/note-taker-app",
     cardBg: note,
+    demo: "https://limitless-shore-27065.herokuapp.com/",
+  },
+  {
+    id: 0,
+    name: "Ecommerce Backend",
+    projectType: "MySQL Restful Demo App",
+    gitHub: "https://github.com/buster35/ecommerce-backend",
+    cardBg: insomnia,
   },
   {
     id: 2,
