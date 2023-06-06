@@ -10,9 +10,7 @@
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-doc-viewer": "^0.1.5",
     "react-dom": "^18.2.0",
-    "react-pdf": "^7.0.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
