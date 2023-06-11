@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 const Resume = () => {
-  const docs = [{ uri: require("../assets/zg-resume-pdf.pdf") }];
+  const docs = [{ uri: require("../assets/zach-g-resume.pdf") }];
   return (
     <Container>
       <Row>
@@ -13,7 +13,7 @@ const Resume = () => {
           config={{
             header: {
               disableHeader: false,
-              disableFileName: false,
+              disableFileName: true,
               retainURLParams: false,
             },
           }}
