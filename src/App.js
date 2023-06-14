@@ -9,10 +9,10 @@ import Project from "./components/Project";
 import projects from "./projects";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Languages from "./components/Languages";
 
 //App is current representation of state//
 function App() {
-  //we have showStack held in state; when click event occurs we expect to update useState to the reciprocal of the false boolean (true)//
   const [stack, setStack] = useState("");
 
   let stackContent;
@@ -23,7 +23,7 @@ function App() {
     stackContent = <Contact />;
   } else if (stack.includes("/#resume")) {
     stackContent = <Resume />;
-  }
+  } else stackContent = <Languages />;
 
   return (
     <>

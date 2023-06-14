@@ -1,8 +1,4 @@
 /* https://cssgradient.io/gradient-backgrounds/ */
-html,
-.pages {
-  background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
-}
 
 #root {
   display: flex;
@@ -28,7 +24,6 @@ p {
 }
 
 .cardImg {
-  /* height: 15vw; */
   height: 200px;
   object-fit: cover;
   cursor: pointer;
@@ -49,4 +44,17 @@ p {
 
 .formDiv {
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
+}
+
+.logoContain {
+  background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
+  min-width: 100%;
+  min-height: 675px;
+}
+
+.logoRow {
+  width: 100%;
+  margin: auto;
+  min-height: 725px;
+  justify-content: space-evenly;
 }
