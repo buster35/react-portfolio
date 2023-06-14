@@ -34,7 +34,7 @@ To install using the terminal: npx create-react-app ., then `npm install` to ins
 ## Usage
 
 Heroku Deployed App:
-https://infinite-crag-07463.herokuapp.com/
+https://zg-portfolio.herokuapp.com/
 
 The user may navigate through my Portfolio, contact me via the Contact nav link, and view my resume by clicking on the Resume nav link.
 
