@@ -14,11 +14,12 @@ function Footer(props) {
         color: "white",
       }}
     >
-      <Container
+      <div
         style={{
           alignItems: "start",
           height: "100px",
         }}
+        className="navContain"
       >
         <Nav>
           <Navbar.Brand href="https://github.com/buster35" target="_blank">
@@ -43,7 +44,7 @@ function Footer(props) {
             />
           </Navbar.Brand>
         </Nav>
-      </Container>
+      </div>
     </Navbar>
   );
 }

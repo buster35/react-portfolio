@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 //we don't need to import Header here bc we're importing this page into Header, which is then imported into App.js
@@ -13,7 +12,7 @@ function Navigation(props) {
         color: "white",
       }}
     >
-      <Container>
+      <div className="navContain">
         <h1>
           <a
             href="#about-me"
@@ -37,7 +36,7 @@ function Navigation(props) {
             Resume
           </Nav.Link>
         </Nav>
-      </Container>
+      </div>
     </Navbar>
   );
 }

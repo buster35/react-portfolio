@@ -5,22 +5,49 @@
   flex-direction: column;
 }
 
+html {
+  background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
+  min-height: 100%;
+}
+
+.navContain {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .aboutMe {
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
   display: inline-flex;
   justify-content: flex-start;
   position: relative;
   max-height: 300px;
-  font-size: 1.07vw;
+  min-height: 300px;
+  /* font-size: 1.04vw; */
+}
+
+.pages {
+  background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
 }
 
 h1 {
   margin-left: 40px;
 }
 
+h3 {
+  padding-bottom: 12px;
+  text-align: center;
+}
+
 p {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
+  min-height: 100%;
+  overflow: auto;
 }
 
 .cardImg {
@@ -53,8 +80,88 @@ p {
 }
 
 .logoRow {
+  display: flex;
   width: 100%;
   margin: auto;
   min-height: 725px;
   justify-content: space-evenly;
+}
+
+.logoCol {
+  border: 3px solid black;
+}
+
+.logoBlocks {
+  display: block;
+  position: relative;
+  font-size: 5rem;
+}
+
+.htmlLogo {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+.cssLogo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.jsLogo {
+  position: absolute;
+  top: 120px;
+  right: 40%;
+  font-size: 4.5rem;
+}
+
+.mongoLogo {
+  position: absolute;
+  top: 190px;
+  right: 10%;
+  font-size: 5rem;
+}
+
+.mysqlLogo {
+  position: absolute;
+  top: 260px;
+  right: 10%;
+  font-size: 5rem;
+}
+
+.bootstrapLogo {
+  position: absolute;
+  top: 365px;
+  left: 30%;
+  font-size: 4.5rem;
+}
+
+.gitLogo {
+  position: absolute;
+  top: 240px;
+  left: 10%;
+  font-size: 4.5rem;
+}
+
+.nodeLogo {
+  position: absolute;
+  top: 435px;
+  right: 25%;
+  font-size: 5rem;
+}
+
+/*All credit for the following code goes to Bhoot Biswas https://stackoverflow.com/posts/42115371/revisions */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
