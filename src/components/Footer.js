@@ -16,7 +16,6 @@ function Footer(props) {
     >
       <div
         style={{
-          alignItems: "start",
           height: "100px",
         }}
         className="navContain"
@@ -37,7 +36,7 @@ function Footer(props) {
           >
             <img
               src={linkedInLogo}
-              width="50"
+              width="60"
               height="auto"
               className="d-inline-block align-center"
               alt="linkedIn logo"

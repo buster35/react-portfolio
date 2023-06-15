@@ -16,7 +16,12 @@ function Navigation(props) {
         <h1>
           <a
             href="#about-me"
-            style={{ outline: "none", textDecoration: "none", color: "white" }}
+            className="myName"
+            style={{
+              outline: "none",
+              textDecoration: "none",
+              color: "white",
+            }}
             onClick={props.handleButtonClick}
           >
             Zach Gilbert
