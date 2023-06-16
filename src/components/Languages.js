@@ -8,7 +8,7 @@ function Languages({ open }) {
       <Collapse
         in={open}
         dimension="width"
-        style={{ transition: "1.5s ease-in-out" }}
+        style={{ transition: "1.2s ease-in" }}
       >
         <Row className="logoRow">
           <Col className="logoCol">
