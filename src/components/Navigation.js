@@ -1,7 +1,6 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-//we don't need to import Header here bc we're importing this page into Header, which is then imported into App.js
+import { Nav, Navbar } from "react-bootstrap";
+//we don't need to import Header here bc we're importing this page into Header, which is then imported into App.js//
 
 function Navigation(props) {
   return (

@@ -14,6 +14,7 @@ import Languages from "./components/Languages";
 //App is current representation of state//
 function App() {
   const [stack, setStack] = useState("");
+  const [open, setOpen] = useState(true);
 
   let stackContent;
 
@@ -23,12 +24,14 @@ function App() {
     stackContent = <Contact />;
   } else if (stack.includes("/#resume")) {
     stackContent = <Resume />;
-  } else stackContent = <Languages />;
+  } else if (stack.includes("/#about-me")) {
+    stackContent = <Languages open={open} setOpen={setOpen} />;
+  }
 
   return (
     <>
       {/* inside Components i can define props related to state */}
-      <Header stack={stack} setStack={setStack} />
+      <Header stack={stack} setStack={setStack} open={open} setOpen={setOpen} />
 
       <AboutMe />
       {/* here is where i'll use conditional rendering to determine which react-bootstrap "Stack" component will be displayed based on click event in navbar */}

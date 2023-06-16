@@ -84,13 +84,17 @@ p {
 }
 
 .logoCol {
-  border: 3px solid black;
+  overflow: hidden;
 }
 
 .logoBlocks {
   display: block;
   position: relative;
   font-size: 5rem;
+}
+
+#futureStudy {
+  text-align: center;
 }
 
 .htmlLogo {
@@ -109,6 +113,13 @@ p {
   position: absolute;
   top: 120px;
   right: 40%;
+  font-size: 4.5rem;
+}
+
+.tsLogo {
+  position: absolute;
+  top: 240px;
+  left: 10%;
   font-size: 4.5rem;
 }
 
