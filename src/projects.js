@@ -4,8 +4,26 @@ import sql from "./assets/mysql-table-outputs.png";
 import wx from "./assets/main-page-img.png";
 import freshCatch from "./assets/freshCatch.png";
 import codingQuiz from "./assets/quiz-screenshot.png";
+import garden from "./assets/homepage-screenshot.png";
+import createThought from "./assets/create-a-thought.png";
 
 const projects = [
+  {
+    id: 6,
+    name: "Social Gardening App",
+    projectType: "MERN Full-Stack Web App",
+    gitHub: "https://github.com/buster35/social-garden",
+    cardBg: garden,
+    demo: "https://social-garden.herokuapp.com/login",
+  },
+  {
+    id: 7,
+    name: "Social App Back-End",
+    projectType: "NoSQL Database Simulation w/ MongoDB",
+    gitHub: "https://github.com/buster35/social-experiment",
+    cardBg: createThought,
+    demo: "https://drive.google.com/file/d/1uflTGxUtAomyZSB37hj2iKcvkeISsQZ2/view",
+  },
   {
     id: 3,
     name: "Weather Dashboard App",
@@ -44,6 +62,7 @@ const projects = [
     projectType: "MySQL Restful Demo App",
     gitHub: "https://github.com/buster35/ecommerce-backend",
     cardBg: insomnia,
+    demo: "https://drive.google.com/file/d/1f0TndOfppk5gvviNAEvKB5VcUDMW_7jv/view",
   },
   {
     id: 2,
@@ -51,6 +70,7 @@ const projects = [
     projectType: "Terminal Database Viewer Node.js",
     gitHub: "https://github.com/buster35/CLI-database-viewer",
     cardBg: sql,
+    demo: "https://drive.google.com/file/d/1PWjVe4FV3KpN-CkQB3RvNf-4c-dqJPTh/view",
   },
 ];
 
