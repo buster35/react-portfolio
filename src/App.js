@@ -10,16 +10,24 @@ import projects from "./projects";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Languages from "./components/Languages";
+import Modal from "./components/Modal";
 
 //App is current representation of state//
 function App() {
   const [stack, setStack] = useState("");
   const [open, setOpen] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [modalImg, setModalImg] = useState("");
+
+  const handleShow = (e) => {
+    setShowModal(true);
+    setModalImg(e.target.src);
+  };
 
   let stackContent;
 
   if (stack.includes("/#portfolio")) {
-    stackContent = <Project projects={projects} />;
+    stackContent = <Project projects={projects} handleShow={handleShow} />;
   } else if (stack.includes("/#contact")) {
     stackContent = <Contact />;
   } else if (stack.includes("/#resume")) {
@@ -36,6 +44,12 @@ function App() {
       <AboutMe />
       {/* here is where i'll use conditional rendering to determine which react-bootstrap "Stack" component will be displayed based on click event in navbar */}
       <Stack>{stackContent}</Stack>
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        projects={projects}
+        modalImg={modalImg}
+      ></Modal>
       <Footer />
     </>
   );

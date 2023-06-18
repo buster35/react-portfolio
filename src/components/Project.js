@@ -1,24 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import {
-  Button,
-  Card,
-  Col,
-  Row,
-  Container,
-  Modal,
-  Image,
-} from "react-bootstrap";
+import { Button, Card, Col, Row, Container } from "react-bootstrap";
 
-function Project({ projects }) {
-  //TODO://useState for showing "Deployed" button; if both button href equals themselves then set cursor to N/A"
-  const [showModal, setShowModal] = useState(false);
-
-  // const handleClose = () => setShowModal(false);
-  const handleShow = () => {
-    setShowModal(true);
-  };
-
+function Project({ projects, handleShow }) {
   return (
     <Container fluid style={{ marginBottom: "100px" }}>
       <Row className="g-4 mt-0 pages">
@@ -54,28 +37,6 @@ function Project({ projects }) {
             </Card>
           </Col>
         ))}
-        {/* <Modal
-          show={showModal}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={true}
-          style={{ backgroundColor: "#0D1B2A" }}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>{project.name}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Image
-              src={project.cardBg}
-              style={{ maxWidth: "450px", objectFit: "contain" }}
-            ></Image>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal> */}
       </Row>
     </Container>
   );
