@@ -4,26 +4,14 @@ import { Container, Row, Col, Collapse } from "react-bootstrap";
 function Languages({ open }) {
   console.log(open);
   return (
-    <Container className="logoContain">
+    <Container fluid className="logoContain">
       <Collapse
         in={open}
         dimension="width"
         style={{ transition: "1.2s ease-in" }}
       >
-        <Row className="logoRow">
-          <Col className="logoCol">
-            <h3>Things I'm Actively Studying</h3>
-            <div className="logoBlocks">
-              <div className="jsLogo">
-                <i className="devicon-javascript-plain colored"></i>
-              </div>
-              <div className="tsLogo">
-                <i className="devicon-typescript-plain colored"></i>
-              </div>
-              <i className="devicon-react-original-wordmark"></i>
-            </div>
-          </Col>
-          <Col className="logoCol">
+        <Row className="logoRow g-0">
+          <Col className="logoCol col-md-4">
             <h3>Foundational Proficiences</h3>
             <div className="logoBlocks">
               <div className="htmlLogo">
@@ -52,7 +40,19 @@ function Languages({ open }) {
               </div>
             </div>
           </Col>
-          <Col className="logoCol">
+          <Col className="logoCol col-md-4">
+            <h3>Things I'm Actively Studying</h3>
+            <div className="logoBlocks">
+              <div className="jsLogo">
+                <i className="devicon-javascript-plain colored"></i>
+              </div>
+              <div className="tsLogo">
+                <i className="devicon-typescript-plain colored"></i>
+              </div>
+              <i className="devicon-react-original-wordmark"></i>
+            </div>
+          </Col>
+          <Col className="logoCol col-md-4">
             <h3>Things I'd Like to Learn in the Future</h3>
             <div className="logoBlocks" id="futureStudy">
               <i className="devicon-python-plain colored"></i>

@@ -8,6 +8,7 @@
 html {
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
   min-height: 100%;
+  padding-right: 0;
 }
 
 .navContain {
@@ -22,12 +23,9 @@ html {
 
 .aboutMe {
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
-  display: inline-flex;
-  justify-content: flex-start;
-  position: relative;
   max-height: 300px;
   min-height: 300px;
-  /* font-size: 1.04vw; */
+  overflow: scroll;
 }
 
 .pages {
@@ -43,7 +41,12 @@ p {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   min-height: 100%;
-  overflow: auto;
+}
+
+.aboutPara {
+  align-self: flex-start;
+  padding: 15px 15px;
+  max-height: 300px;
 }
 
 .cardImg {
@@ -53,11 +56,11 @@ p {
 }
 
 .myImg {
-  width: 250px;
-  max-height: 265px;
   border-radius: 20px;
   padding: 15px 15px;
-  margin-left: 40px;
+  max-height: 270px;
+  max-width: 270px;
+  /* min-width: 255px; */
 }
 
 .contactForm {
@@ -72,7 +75,7 @@ p {
 .logoContain {
   background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
   min-width: 100%;
-  min-height: 675px;
+  /* min-height: 675px; */
 }
 
 .logoRow {
@@ -84,7 +87,12 @@ p {
 }
 
 .logoCol {
-  overflow: hidden;
+  overflow: scroll;
+  min-width: 350px;
+  border: 1px solid black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .logoBlocks {
