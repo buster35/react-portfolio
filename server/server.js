@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const db = require("./config/connection");
 const routes = require("./routes");
 
@@ -14,6 +14,12 @@ app.use(routes);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
+
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "../client/build")));
+// }
+
+//This sets our express "init" for localhost (or other via process.env.PORT) inside a method that first initiates our connection to the mongodb database//
 
 db.once("open", () => {
   app.listen(PORT, () => console.log(`Now listening on localhost: ${PORT}`));

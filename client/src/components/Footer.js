@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import gitLogo from "../assets/github-mark-white.png";
 import linkedInLogo from "../assets/LI-In-Bug.png";
 
