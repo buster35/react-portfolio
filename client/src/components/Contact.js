@@ -1,11 +1,12 @@
 // import Button from "react-bootstrap/Button";
 import { useState } from "react";
-import { Form, InputGroup } from "react-bootstrap";
+import { Form, InputGroup, Button } from "react-bootstrap";
 import "../App.css";
 
 function Contact() {
   const [validated, setValidated] = useState(false);
 
+  //To validate that all form fields are filled in; I have an additional validation package to ensure correct email input//
   const handleValidate = (e) => {
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
@@ -14,6 +15,21 @@ function Contact() {
     }
     setValidated(true);
   };
+
+  async function storeContact(e) {
+    e.preventDefault();
+    const resp = await fetch("/api/contact");
+    const result = await resp.json();
+
+    if (result) {
+      alert(
+        "Thank you for submitting your inquiry! I'll read/respond as soon as I am able. Have a great day!"
+      );
+    } else if (!result) {
+      alert("I'm sorry, something went wrong with your submission!");
+      console.log({});
+    }
+  }
 
   return (
     <div className="formDiv">
@@ -61,10 +77,9 @@ function Contact() {
           </Form.Text>
         </Form.Group>
 
-        {/* <Button variant="primary" type="submit">
-        <Form.Control type="text" disabled readOnly />
-        Submit
-      </Button> */}
+        <Button variant="primary" type="submit" onClick={storeContact}>
+          Submit
+        </Button>
       </Form>
     </div>
   );
