@@ -2,7 +2,7 @@
   "name": "mern-auth-starter",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://zg-portfolio.herokuapp.com/",
+  "homepage": "/build",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
