@@ -13,6 +13,16 @@ app.get("/", function (req, res) {
 app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "..", "build/index.html"));
 });
+
+app.get("/*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "..", "client/build/index.html"));
+});
+
+app.get("*", function (req, res) {
+  const index = path.join(__dirname, "build", "index.html");
+  res.sendFile(index);
+});
+
 app.listen(port, () => {
   console.log("Server is running on port: ", port);
 });
