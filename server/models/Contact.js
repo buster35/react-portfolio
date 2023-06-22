@@ -1,6 +1,5 @@
 //Requiring in mongoose package, which allows us to link this new model schema with mongodb//
 const { Schema, model } = require("mongoose");
-require("mongoose-type-email");
 //Do i need bcrypt to encrypt user contact info?
 //const bcrypt = require("bcrypt");
 
@@ -10,7 +9,7 @@ const contactSchema = new Schema({
     required: true,
   },
   email: {
-    type: Email,
+    type: String,
     required: true,
   },
   comment: {
