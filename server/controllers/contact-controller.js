@@ -1,18 +1,13 @@
 const { Contact } = require("../models/Contact");
 
-module.exports = {
-  async createContact({ body }, res) {
-    const contact = await Contact.create(body);
+async function createContact(req, res) {
+  const contact = await Contact.create(req.body);
 
-    if (!contact) {
-      return res.status(400).json({ message: "Unable to create contact" });
-    }
+  if (!contact) {
+    return res.status(400).json({ message: "Unable to create contact" });
+  }
 
-    res.status(200).json(contact);
-  },
-  node: {
-    global: false,
-    __filename: false,
-    __dirname: false,
-  },
-};
+  res.status(200).json(contact);
+}
+
+module.exports = { createContact };
