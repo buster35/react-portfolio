@@ -6,9 +6,10 @@ function AboutMe({ aboutMe, setAboutMe }) {
   return (
     <Container fluid className="aboutMe">
       <Row>
-        <Col className="col-sm-3 myImg">
+        <Col className="col-sm-3">
           <Image
             src={profilePic}
+            className="myImg"
             alt="My Professional Headshot"
             style={{ width: "100%", borderRadius: "20px" }}
           />

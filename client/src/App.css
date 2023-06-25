@@ -166,6 +166,10 @@ p {
   font-size: 5rem;
 }
 
+.kotlinLogo {
+  position: absolute;
+}
+
 /*All credit for the following code goes to Bhoot Biswas https://stackoverflow.com/posts/42115371/revisions */
 ::-webkit-scrollbar {
   width: 12px;

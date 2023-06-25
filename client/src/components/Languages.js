@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col, Collapse } from "react-bootstrap";
 
 function Languages({ open }) {
-  console.log(open);
   return (
     <Container fluid className="logoContain">
       <Collapse
@@ -50,6 +49,9 @@ function Languages({ open }) {
                 <i className="devicon-typescript-plain colored"></i>
               </div>
               <i className="devicon-react-original-wordmark"></i>
+              <div className="kotlinLogo">
+                <i class="devicon-kotlin-plain-wordmark colored"></i>
+              </div>
             </div>
           </Col>
           <Col className="logoCol col-md-4">

@@ -1,8 +1,7 @@
 {
   "name": "mern-auth-starter",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "/build",
+  "description": "https://localhost:3001",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
